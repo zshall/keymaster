@@ -1,4 +1,4 @@
-# keymaster.js
+# keymaster-updated.js
 
 Keymaster is a simple micro-library for defining and
 dispatching keyboard shortcuts in web applications.
@@ -14,7 +14,7 @@ it in.*
 Include `keymaster.js` in your web app*, by loading it as usual:
 
 ```html
-<script src="keymaster.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/cukmekerb/keymaster/keymaster.min.js"></script>
 ```
 
 Keymaster has no dependencies and can be used completely standalone.
@@ -62,7 +62,7 @@ Keymaster understands the following modifiers:
 
 The following special keys can be used for shortcuts:
 `backspace`, `tab`, `clear`, `enter`, `return`, `esc`, `escape`, `space`,
-`up`, `down`, `left`, `right`, `home`, `end`, `pageup`, `pagedown`, `del`, `delete`, `pause`,
+`up`, `down`, `left`, `right`, `home`, `end`, `pageup`, `pagedown`, `del`, `delete`, `pause`,`divide`(numpad /),`multiply`(mumpad *),`subtract`(numpad -),`add`(numpad +),`numpad0` - `numpad9`,
 and `f1` through `f19`.
 
 
@@ -182,7 +182,7 @@ key.unbind('o, enter', 'files');
 Keymaster should work with any browser that fires `keyup` and `keydown` events,
 and is tested with IE (6+), Safari, Firefox and Chrome.
 
-See [http://madrobby.github.com/keymaster/](http://madrobby.github.com/keymaster/) for a live demo.
+See [http://cukmekerb.github.com/keymaster/](http://cukmekerb.github.com/keymaster/) for a live demo.
 
 
 ## CoffeeScript
@@ -212,5 +212,8 @@ submit a pull request.
 
 * Finish test suite
 
-Keymaster is (c) 2011-2013 Thomas Fuchs and may be freely distributed under the MIT license.
+Original work is (c) 2011-2013 Thomas Fuchs and may be freely distributed under the MIT license.
+See the `MIT-LICENSE` file.
+
+Updated work is (c) 2021 Cukmekerb and may be freely distributed under the MIT license.
 See the `MIT-LICENSE` file.
