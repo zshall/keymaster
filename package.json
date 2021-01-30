@@ -1,11 +1,10 @@
 {
-  "name": "keymaster",
+  "name": "keymaster-updated",
   "description": "library for defining and dispatching keyboard shortcuts",
-  "version": "1.6.3",
-  "author": "Thomas Fuchs <thomas@slash7.com> (http://mir.aculo.us)",
+  "author": "Cukmekerb <cukmekerb@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/madrobby/keymaster"
+    "url": "https://github.com/cukmekerb/keymaster"
   },
   "main": "./keymaster.js",
   "license": "MIT"
