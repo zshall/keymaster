@@ -1,6 +1,7 @@
 {
-  "name": "keymaster-updated",
+  "name": "keymaster-reloaded",
   "description": "library for defining and dispatching keyboard shortcuts",
+  "version": "1.7.0",
   "author": "Cukmekerb <cukmekerb@gmail.com>",
   "repository": {
     "type": "git",

@@ -1,4 +1,4 @@
-# keymaster-updated.js
+# keymaster-reloaded.js
 
 Keymaster is a simple micro-library for defining and
 dispatching keyboard shortcuts in web applications.
@@ -11,6 +11,7 @@ it in.*
 
 ## Usage
 
+### Web
 Include `keymaster.js` in your web app*, by loading it as usual:
 
 ```html
@@ -20,9 +21,14 @@ Include `keymaster.js` in your web app*, by loading it as usual:
 Keymaster has no dependencies and can be used completely standalone.
 It should not interfere with any JavaScript libraries or frameworks.
 
-_*Preferably use a minified version that fits your workflow. You can
-run `make` to have UglifyJS (if you have it installed) create a
+_*Preferably use a minified version that fits your workflow. You can use the (minified) CDN link above or run `make` to have UglifyJS (if you have it installed) create a
 `keymaster.min.js` file for you._
+
+### NodeJS
+
+`npm i keymaster-reloaded`
+
+
 
 ## Defining shortcuts
 
