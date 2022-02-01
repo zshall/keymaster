@@ -21,7 +21,7 @@ Include `keymaster.js` in your web app*, by loading it as usual:
 Keymaster has no dependencies and can be used completely standalone.
 It should not interfere with any JavaScript libraries or frameworks.
 
-_*Preferably use a minified version that fits your workflow. You can use the (minified) CDN link above or run `make` to have UglifyJS (if you have it installed) create a
+_*Preferably use a minified version that fits your workflow. You can use the (minified) CDN link above or run `make` to have Terser (if you have it installed) create a
 `keymaster.min.js` file for you._
 
 ### NodeJS
@@ -218,7 +218,7 @@ submit a pull request.
 * Finish test suite
 
 Original work is (c) 2011-2013 Thomas Fuchs and may be freely distributed under the MIT license.
-See the `MIT-LICENSE` file.
+See the `LICENSE` file.
 
 Updated work is (c) 2021 Cukmekerb and may be freely distributed under the MIT license.
-See the `MIT-LICENSE` file.
+See the `LICENSE` file.

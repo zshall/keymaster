@@ -1,4 +1,4 @@
 # To run this, you'll need to install UglifyJS:
-# npm install uglify-js@1 -g
+# npm install terser -g
 default:
-	uglifyjs -o keymaster.min.js keymaster.js
+	terser keymaster.js --config-file terser_conf.json -o keymaster.min.js
