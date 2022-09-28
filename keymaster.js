@@ -23,7 +23,7 @@
       esc: 27, escape: 27, space: 32,
       left: 37, up: 38,
       right: 39, down: 40,
-      ins: 45, 'insert': 45,      
+      ins: 45, 'insert': 45,
       del: 46, 'delete': 46,
       home: 36, end: 35,
       divide: 111, multiply: 106, subtract: 109, add: 107,
@@ -140,6 +140,7 @@
   function resetModifiers() {
     for(k in _mods) _mods[k] = false;
     for(k in _MODIFIERS) assignKey[k] = false;
+    _downKeys = [];
   };
 
   // parse and assign shortcut
@@ -270,10 +271,10 @@
   };
 
 
-  if(typeof document !== 'undefined'){
+  if(typeof window !== 'undefined' && window.document){
     // set the handlers globally on document
-    addEvent(document, 'keydown', function(event) { dispatch(event) }); // Passing _scope to a callback to ensure it remains the same by execution. Fixes #48
-    addEvent(document, 'keyup', clearModifier);
+    addEvent(window.document, 'keydown', function(event) { dispatch(event) }); // Passing _scope to a callback to ensure it remains the same by execution. Fixes #48
+    addEvent(window.document, 'keyup', clearModifier);
 
     // reset modifiers to false whenever the window is (re)focused.
     addEvent(window, 'focus', resetModifiers);
