@@ -185,6 +185,9 @@
       if (keys.length > 1) {
         mods = getMods(keys);
         key = keys[keys.length - 1];
+      } else {
+        mods = [];
+        key = keys[0];
       }
 
       key = code(key);
