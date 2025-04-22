@@ -450,6 +450,68 @@
 
         key.filter = oldFilter;
         key.setScope();
+      },
+
+      testNumpadKeys: function(t) {
+        function testKey(testCase) {
+          var cnt = 0;
+          key(testCase.key, function(){ cnt++ });
+          keydown(testCase.code);
+          keyup(testCase.code);
+          t.assertEqual(1, cnt);
+          keydown(testCase.code);
+          keyup(testCase.code);
+          t.assertEqual(2, cnt);
+        }
+        var keys = [
+          {
+            key: 'numpad0',
+            code: 96
+          },
+          {
+            key: 'numpad1',
+            code: 97
+          },
+          {
+            key: 'numpad2',
+            code: 98
+          },
+          {
+            key: 'numpad3',
+            code: 99
+          },
+          {
+            key: 'numpad4',
+            code: 100
+          },
+          {
+            key: 'numpad5',
+            code: 101
+          },
+          {
+            key: 'numpad6',
+            code: 102
+          },
+          {
+            key: 'numpad7',
+            code: 103
+          },
+          {
+            key: 'numpad8',
+            code: 104
+          },
+          {
+            key: 'numpad9',
+            code: 105
+          },
+          {
+            key: 'numpadDecimal',
+            code: 110
+          }
+        ];
+        for (var i = 0; i < keys.length; i++) {
+          testKey(keys[i]);
+        }
       }
     });
   </script>

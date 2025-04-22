@@ -29,6 +29,7 @@
       divide: 111, multiply: 106, subtract: 109, add: 107,
       numpad0: '96', numpad1: '97', numpad2: '98', numpad3: '99', numpad4: '100',
       numpad5: '101', numpad6: '102', numpad7: '103', numpad8: '104', numpad9: '105',
+      numpadDecimal: '110',
       pageup: 33, pagedown: 34,
       ',': 188, '.': 190, '/': 191,
       '`': 192, '-': 189, '=': 187,
